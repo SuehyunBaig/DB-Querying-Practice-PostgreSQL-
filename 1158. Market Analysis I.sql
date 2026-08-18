@@ -4,6 +4,6 @@ group by u.user_id, u.join_date
 
 -- We do not want to remove non-2019 rows - otherwise how are we going to display 0 for users without any 2019 buying?
 -- Instead, we should group users by user_id, while preserving all data regardless of order date.
--- Then in SELECT statement, we use count (*) FILTER (WHERE  ) statement which is SQL-equivalent of COUNTIF in Excel.
+-- Then in SELECT statement, we use COUNT (*) FILTER (WHERE ... ) statement which is SQL-equivalent of COUNTIF in Excel.
 
 -- Key distinction: displaying rows that meet certain condition vs. counting the number of rows that meet certain condition
